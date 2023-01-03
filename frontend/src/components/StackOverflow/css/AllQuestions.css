@@ -3,6 +3,7 @@
   /* flex-direction: column; */
   width: 100%;
   padding: 20px 0px;
+  border-Top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   width: 100%;
 }
@@ -62,9 +63,19 @@
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 10px;
 }
-
+.tags{
+  display: block;
+  float:left;
+}
+.question-tags{
+  margin:10px 5px;
+  padding:5px 10px;
+  background-color: rgb(181, 223, 255);
+  border-radius: 3px;
+  width: max-content;
+}
 .author {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-left: auto;
 }
@@ -81,7 +92,7 @@
 
 .auth-details > p {
   margin-left: 5px;
-  font-size: small;
+  font-size: large;
   color: #0151f0d8;
 }
 

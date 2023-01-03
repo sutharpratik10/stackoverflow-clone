@@ -1,4 +1,6 @@
 import React from 'react'
+import CssBaseline from '@mui/material/CssBaseline';
+import { Box, Container } from '@mui/system';
 
 import '../css/index.css'
 import './css/index.css'
@@ -10,12 +12,12 @@ import Sidebar from './Sidebar'
 
 const index = () => {
   return (
-    <div className='stck-index'>
+    <Container maxWidth="xl">
         <div className='stack-index-content'>
             <Sidebar/>
             <Main/>
         </div>
-    </div>
+    </Container>
   )
 }
 
