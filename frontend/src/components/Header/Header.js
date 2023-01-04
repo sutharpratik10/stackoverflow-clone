@@ -6,6 +6,7 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import InboxIcon from '@mui/icons-material/Inbox';
 import HelpIcon from '@mui/icons-material/Help';
 import ChatIcon from '@mui/icons-material/Chat';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -13,7 +14,7 @@ function Header() {
     <header>
       <div className='header-container'>
         <div className='header-left'>
-          <a><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Stack_Overflow_logo.svg" alt='logo'/></a>
+          <Link to='/'><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Stack_Overflow_logo.svg" alt='logo'/></Link>
           <h3>Products</h3>
         </div>
         <div className='header-middle'>

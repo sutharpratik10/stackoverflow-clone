@@ -77,7 +77,7 @@ button {
 
 .main-filter-item {
   display: flex;
-  padding: 5px 25px;
+  padding: 0px 15px;
   border: 1px solid #0095ff;
   border-radius: 3px;
   background-color: #00ccff17;

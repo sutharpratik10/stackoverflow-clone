@@ -11,11 +11,11 @@ const Main = () => {
         <div className='main-container'>
             <div className='main-top'>
                 <h2>All Questions</h2>
-                <Link>
+                <Link to='/Add-Question'>
                     <button>Ask Question</button>
                 </Link>
             </div>
-            <div className='main-dec'>
+            <div className='main-desc'>
                 <p>All Question stat</p>
                 <div className='main-filter'>
                     <div className='main-tabs'>

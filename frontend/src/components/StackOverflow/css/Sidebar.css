@@ -49,18 +49,23 @@ Link:hover, a:hover {
 .link-tag {
   display: flex;
   align-items: center;
-  padding: 5px 0;
+  padding: 10px 0;
   width: 100%;
 }
 
 .link-tag:hover {
   border-right: 5px solid rgb(245, 162, 9);
+  background-color: #e0e0e0;;
 }
 
-.link-tag  .MuiSvgIcon-root {
-  font-size: 18px;
+.link-tag .MuiSvgIcon-root {
+  font-size: 25px;
+  margin-bottom: -7px;
   margin-right: 5px;
   color: rgb(245, 162, 9);
+}
+.link-tag:hover .MuiSvgIcon-root {
+  color: rgb(37, 37, 37);
 }
 
 .tags {
