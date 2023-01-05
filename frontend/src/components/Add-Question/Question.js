@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactQuill from 'react-quill'
-import { TagsInput } from 'react-tag-input-component'
+import TagsInput from 'react-tag-input-component'
 
 import 'react-quill/dist/quill.snow.css';
 import './index.css'
@@ -18,7 +18,7 @@ const Question = () => {
               <div className='title'>
                 <h3>Title</h3>
                 <small>Be specific you are asking a question to another person</small>
-                <imput type="text" placeholder = 'Add the question title'/>
+                <input type='text' placeholder = 'Add the question title'/>
               </div>
             </div>
             <div className='question-option'>
@@ -32,11 +32,12 @@ const Question = () => {
               <div className='title'>
                 <h3>Tags</h3>
                 <small>Add up to 5 tags to describe what you question is about</small>
-                {/* <TagsInput name='Tags' placeholder='Press enter to add new tag'/> */}
+                <input name='Tags' placeholder='Press enter to add new tag' /> 
               </div>
             </div>
           </div>
         </div>
+        <button className='button'>Ask a Question</button>
       </div>
     </div>
   )
