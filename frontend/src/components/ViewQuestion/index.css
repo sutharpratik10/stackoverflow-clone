@@ -40,3 +40,15 @@ pre {
   width: 90px;
   flex-wrap: wrap;
 }
+.comments > button{
+  width: 110px;
+  margin-top: 10px;
+}
+.react-quill {
+  margin: 10px 0;
+  border-radius: 10px;
+  height: 200px;
+}
+.main-answer > button {
+  margin-top: 50px;
+}

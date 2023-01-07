@@ -3,8 +3,8 @@
   /* flex-direction: column; */
   width: 100%;
   padding: 20px 0px;
-  border-Top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-Top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   width: 100%;
 }
 
@@ -107,8 +107,8 @@
   flex-direction: column;
   font-size: 0.9rem;
   padding: 10px 0px;
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
+  border-Top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
 }
 
 .comment > p {
@@ -133,3 +133,4 @@
 .comments > p:hover {
   color: #0151f0a2;
 }
+
