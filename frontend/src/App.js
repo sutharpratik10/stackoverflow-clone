@@ -5,7 +5,8 @@ import {
   BrowserRouter as Router, Switch, Route, 
 } from 'react-router-dom'
 import StackOverflow from './components/StackOverflow'
-import Question from './components/Add-Question/Question';
+import Question from './components/Add-Question/Question'
+import ViewQuestion from './components/ViewQuestion'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Header/>
         <Switch>
+          <Route  exact path="/question" component={ViewQuestion} />
           <Route  exact path="/add-question" component={Question} />
           <Route  exact path="/" component={StackOverflow} />
         </Switch>
@@ -22,3 +24,4 @@ function App() {
 }
 
 export default App;
+ 
