@@ -1,11 +1,14 @@
 .all-questions {
-  display: flex;
   /* flex-direction: column; */
   width: 100%;
   padding: 20px 0px;
   border-Top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
   width: 100%;
+}
+.all-questions > p{
+  color: #6f6f6f;
+  font-size: 20px;
 }
 
 .all-questions-container {

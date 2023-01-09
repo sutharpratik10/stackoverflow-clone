@@ -4,8 +4,8 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import Bookmark from '@mui/icons-material/Bookmark';
 import HistoryIcon from '@mui/icons-material/History';
-import { Avatar } from '@mui/material'
-import ReactQuill from 'react-quill'
+import { Avatar } from '@mui/material';
+import ReactQuill from 'react-quill';
 
 import 'react-quill/dist/quill.snow.css';
 import './index.css'

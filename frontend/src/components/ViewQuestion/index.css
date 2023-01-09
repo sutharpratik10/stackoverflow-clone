@@ -52,3 +52,6 @@ pre {
 .main-answer > button {
   margin-top: 50px;
 }
+.comments .title > button{
+  margin-top: 10px;
+}
