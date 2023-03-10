@@ -6,10 +6,15 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import InboxIcon from '@mui/icons-material/Inbox';
 import HelpIcon from '@mui/icons-material/Help';
 import ChatIcon from '@mui/icons-material/Chat';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
+import { signOut } from 'firebase/auth';
 
 
 function Header() {
+  const user = useSelector(selectUser)
+
   return (
     <header>
       <div className='header-container'>
@@ -25,7 +30,10 @@ function Header() {
         </div>
         <div className='header-right'>
           <div className='header-right-container'>
-            <AccountBoxIcon />
+            <span onClick={() =>{
+              signOut();
+            }}>
+            <AccountBoxIcon/></span>
             <InboxIcon/>
             <HelpIcon/>
             <ChatIcon/>

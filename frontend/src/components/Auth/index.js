@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import {signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword} from 'firebase/auth';
 import GoogleIcon from '@mui/icons-material/Google';
 import { auth, provider } from '../../firebase';
+import { useHistory } from 'react-router-dom';
 import './index.css'
-import { red } from '@mui/material/colors';
+
 
 const Index = () => {
     const [register, setRegister] = useState(true)
@@ -12,6 +13,7 @@ const Index = () => {
     const [username, setUsername] = useState("")
     const [loading, setLoading] = useState(false) 
     const [error, setError] = useState("")
+    const history = useHistory()
 
     const handleSignInGoogle = () => {
         signInWithPopup(auth, provider).then((res) => {
@@ -27,8 +29,9 @@ const Index = () => {
             setLoading(false)
         }else {
             createUserWithEmailAndPassword(auth, email, password).then((res) =>  {
-                setLoading(false)
-                console.log(res)
+                setLoading(false);
+                history.push("/");
+                console.log(res);
             }).catch((error)=>{
                 console.log(error)
                 setError(error.message)
@@ -47,8 +50,9 @@ const Index = () => {
         }
         else {
             signInWithEmailAndPassword(auth, email, password).then((res) => {
-                console.log(res)
-                setLoading(false)
+                console.log(res);
+                history.push("/");
+                setLoading(false);
             }).catch((error)=> {
                 console.log(error.code)
                 setError(error.message)
