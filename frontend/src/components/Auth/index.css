@@ -28,8 +28,7 @@
 
 .single-option {
   display: flex;
-  padding: 9px;
-  margin: 5px 0;
+  padding: 5px 10px;
   border-radius: 3px;
   color: rgba(0, 0, 0, 0.8);
   background-color: #fff;
@@ -39,7 +38,7 @@
   transition: all 0.3s;
 }
 .single-option .logo{
-  margin-top: 14px;
+  margin-top: 4px;
 }
 
 .single-option:hover {
@@ -47,7 +46,7 @@
 }
 
 .single-option > p {
-  margin-left: 10px;
+  margin: 4px 0px 0px 10px;
 }
 img {
   width: 20px;
