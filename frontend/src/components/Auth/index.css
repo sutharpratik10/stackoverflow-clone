@@ -96,3 +96,7 @@ img {
   text-decoration: "underline";
   cursor: pointer;
 }
+.errormessage{
+  color: red;
+  font-size: 14px;
+}
